@@ -1,0 +1,17 @@
+<h4>&Uuml;ber die Tiny Gallery</h4>
+
+<p>Die Galerie baut sich automatisch aus den Inhalten auf.</p>
+
+<p>F&uuml;r neuen Inhalt gen&uuml;gt es, ein Verzeichnis in images anzulegen und die entsprechenden Bilder dort zu hinterlegen.</p>
+
+<p>Um die neue Galerie darzustellen und einen neuen Navigationsbutton zu intergrieren, mu&szlig; eine bestehende Galeriedatei kopiert und&nbsp; wie das neue Verzeichns benannt werden.</p>
+
+<p>Frameworks:</p>
+
+<p><a href="https://simplecss.org/" target="_blank">simple.css</a></p>
+
+<p><a href="https://getuikit.com/docs/introduction" target="_blank">uikit</a></p>
+
+<p>Die Seite hat zwei Templates &ndash; f&uuml;r Light- and Dark-Mode</p>
+
+

@@ -1,0 +1,5 @@
+<h4>&Uuml;ber die Eintr&auml;ge auf dieser Seite</h4>
+
+<p>Die Artikel auf dieser Seite bestehen aus HTML-Schnipseln in txt-Dateien im Verzeichnis content.</p>
+
+<p>Die ersten vier Zeichen werden bei der Ausgabe abgeschnitten, so da&szlig; eine Sortierung mit den Pr&auml;fixen 000- bis 999- m&ouml;glich ist.</p>

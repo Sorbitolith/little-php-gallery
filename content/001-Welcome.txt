@@ -1,0 +1,3 @@
+<h4>Hallo dies ist eine Testgalerie</h4>
+
+<p>Diese Galerie dient als Ausgangsprojekt f&uuml;r diverse Fotopr&auml;sentaionen f&uuml;r die Photobox</p>

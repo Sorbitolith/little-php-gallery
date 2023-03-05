@@ -3,7 +3,7 @@
 
 /* import the customized classes */
 @import "classes.css";
-@import "grid.css";
+/*@import "grid.css"; */
 
 /* Set the global variables for everything. Change these to use your own fonts/colours. */
 :root {
@@ -38,6 +38,7 @@
   --btn-bg-hover: #29b680;
   --btn-hover: #fff;
   --footer-bg: #29b68078;
+  --box-shadow:0 22px 70px 4px rgba(0, 0, 0, 0.15)
 }
 
 /* Dark theme */
@@ -53,6 +54,7 @@
     --code: #F06292;
     --preformatted: #CCC;
     --disabled: #111;
+    --box-shadow:0 22px 70px 4px rgba(255, 255, 255, 0.15)
   }
 
 
@@ -66,6 +68,7 @@
 html {
   /* Set the font globally */
   font-family: var(--sans-font);
+  background-color: var(--bg) !important;
   font-size: 16px;
   font-weight: 100;
 }
@@ -90,10 +93,12 @@ body {
 
 /* Make the header bg full width, but the content inline with body */
 header {
-  background-image: linear-gradient(var(--footer-bg), var(--btn-bg-hover));
+  background-image: url(../bginc/header.jpg);
+  background-size: cover;
   border-bottom: 1px solid var(--border);
   text-align: center;
   padding: 2rem .5rem;
+  min-height: 680px;
   width: 100vw;
   position: relative;
   box-sizing: border-box;
@@ -109,7 +114,10 @@ header h1,
 header p {
   margin: 0;
 }
-
+.bb {
+  position: absolute;
+  left: 5%;
+}
 /* Fix line height when title wraps */
 h1, h2, h3 {
   line-height: 1.1;
@@ -140,11 +148,12 @@ nav a:hover {
   color: var(--btn-hover) !important;
   background-color: var(--btn-bg-hover);
   border-color: var(--border);
+  text-decoration: none !important;
 }
 
 nav a.current:hover {
-  text-decoration: none;
-}
+  text-decoration: none !important;
+  }
 main{
   min-height: 80vh;
 }
@@ -156,7 +165,7 @@ footer {
   font-size: .9rem;
   font-weight: 300;
   border-top: 1px solid var(--border);
-  background-image: linear-gradient(var(--btn-bg-hover), var(--footer-bg));
+  background-image: url(../bginc/footer.jpg);
   text-align: center;
   width: 100vw;
   position: relative;
@@ -173,6 +182,9 @@ h1, h2, h3 {
 }
 h4, h5, h6 {
   font-weight: 200;
+}
+h1, h2, h3, h4, h5, h6 {
+  color: var(--text);
 }
 h1 {
   font-size: calc(var(--base-fontsize) * var(--header-scale) * var(--header-scale) * var(--header-scale) * var(--header-scale));
@@ -450,15 +462,16 @@ fieldset {
 /* Misc body elements */
 
 article{
-  width: 100%;
+  
   border: 1px solid var(--border);
   padding: 1rem;
   border-radius: 5px;
   margin-bottom: 1rem;
   background-color: transparent;
-  box-shadow: 0 22px 70px 4px rgba(0, 0, 0, 0.15);  
+  box-shadow: var(--box-shadow);  
   overflow: hidden;
 }
+
 article h1, h2, h3, h4, h5, h6 {
   margin-top: calc(var(--line-height) * 0.3rem);
 }
